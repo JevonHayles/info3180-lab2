@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block main %}
+<section class = 'profile'>
+    <div class = 'intro'>
+
+        <div class = 'intro-photo'>
+            <img src = "{{  url_for('static', filename = 'mypicture.png')  }}" alt = 'mefr'>
+        </div>
+
+        <div class = 'intro-text'>
+            <h1>Jevon Hayles</h1>
+            <h3>@vivivivivi</h3>
+            <h3>Kingston, Jamaica</h3>
+            <h3>{{joined}}</h3>
+        </div>
+
+    </div>
+    <div class = 'bio'>
+
+        <div class = 'bio-text'>
+            <h3>woo.....</h3>
+        </div>
+
+        <div class = 'stats'>
+
+            <div id = 'Posts'>
+                <h2>1,067</h2>
+                <h3>Posts</h3>
+            </div>
+
+            <div id = 'Following'>
+                <h2>645</h2>
+                <h3>Following</h3>
+            </div>
+
+            <div id = 'Followers'>
+                <h2>15</h2>
+                <h3>Followers</h3>
+            </div>
+
+        </div>
+        <div class = 'follow-button'>
+
+            <button type="button" onclick="alert('Followed!')" class="btn">Follow</button>
+
+        </div>
+    </div>
+</section>
+{% endblock %}

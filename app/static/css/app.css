@@ -1,3 +1,106 @@
 body {
     padding-top: 5rem;
 }
+
+main{
+    height: 100%;
+}
+
+main .container{
+    width: 100%;
+    min-height: 550px;
+
+    display: grid;
+    grid-template-rows: 60% 40%;
+}
+
+.profile{
+    grid-row: 1/3;
+    width: 40%;
+
+    margin: auto;
+    border: black;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 10px;
+}
+.profile h1{
+    font-size: 46px;
+}
+.profile h2{
+    font-size: 22px;
+}
+.profile h3{
+    font-size: 17px;
+}
+
+.intro{
+    grid-row: 1/2;
+    background-color: #98FB98;
+    background-image: linear-gradient(#5e734e, #9dc183);
+    height: 60%;
+
+    padding: 20px;
+
+    color:white;
+    border-radius: 10px 10px 0px 0px;
+}
+.intro .intro-photo img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    border-radius: 50%;
+    padding: 5px;
+
+    width: 180px;
+    height: 180px;
+}
+.intro .intro-text{
+    text-align: center;
+    word-wrap: break-word
+}
+
+.bio{
+    grid-row: 2/3;
+    background-color: white;
+    height: 40%;
+
+    border-radius: 0px 0px 10px 10px;
+}
+.bio .bio-text{
+    color: #bebebe;
+
+    text-align: center;
+    word-wrap: break-word;
+
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.stats{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    text-align: center;
+
+    padding: 5px;
+}
+.stats h3{
+    color: #bebebe;
+}
+
+.follow-button{
+    text-align: center;
+
+    padding: 20px;
+    padding-bottom: 30px;
+}
+.btn{
+    background-color: #d6b4fc;
+    width: 130px;
+
+    font-weight: bold;
+    color: white;
+}
